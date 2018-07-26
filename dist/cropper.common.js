@@ -1252,13 +1252,13 @@ var render = {
       height: canvasHeight
     };
 
-    self.containerData.width = canvasData.width;
-    self.options.minCropBoxWidth = self.options.minCropBoxWidth / (self.imageData.naturalWidth / canvasData.width);
+      this.containerData.width = canvasData.width;
+      this.options.minCropBoxWidth = this.options.minCropBoxWidth / (this.imageData.naturalWidth / canvasData.width);
 
-    setStyle(self.cropper, {
-      width: self.containerData.width,
-      height: self.containerData.height
-    });
+      setStyle(this.cropper, {
+        width: this.containerData.width,
+        height: this.containerData.height
+      });
 
     canvasData.left = (containerData.width - canvasWidth) / 2;
     canvasData.top = (containerData.height - canvasHeight) / 2;
