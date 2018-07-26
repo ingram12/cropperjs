@@ -1,7 +1,7 @@
 {
   "name": "ingram14-cropperjs",
   "description": "JavaScript image cropper.",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "main": "dist/cropper.common.js",
   "module": "dist/cropper.esm.js",
   "unpkg": "dist/cropper.js",

@@ -1255,15 +1255,9 @@
         width: canvasWidth,
         height: canvasHeight
       };
-      
-      this.containerData.width = canvasData.width;
+
       this.options.minCropBoxWidth = this.options.minCropBoxWidth / (this.imageData.naturalWidth / canvasData.width);
-      
-      setStyle(this.cropper, {
-        width: this.containerData.width,
-        height: this.containerData.height
-      });
-      
+
       canvasData.left = (containerData.width - canvasWidth) / 2;
       canvasData.top = (containerData.height - canvasHeight) / 2;
       canvasData.oldLeft = canvasData.left;
